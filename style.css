@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 800px;
+    width: 500px;
+
+    background-image: url(pokemonyellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 25px solid rgb(255, 203, 5);
+    border-radius: 20px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.container:hover > .flip {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.container, .front, .back {
+    height: 380px;
+}
+
+.flip {
+    transition: .6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.photo {
+    border: 10px solid rgb(234, 189, 5);
+    border-radius: 10px;
+    width: 450px;
+    height: 350px;
+    box-shadow: 8px 8px 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(234, 189, 5);
+    width: 75%;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.ability {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
